@@ -1,4 +1,3 @@
-
 <h2> EssentialsX </h5>
 <h3> Features </h3>
 
@@ -496,12 +495,15 @@ Allows sending announcements at regular intervals within the server to inform us
 1. <b>Enable</b>
    - Enable/Disable
 
-```    <Messages>
+```
+<Messages>
       <Message Message="#1 - No Hacks" Image="url here" />
       <Message Message="#1 - No Toxic" Image="url here" />
       <Message Message="#1 - No Bugs" Image="url here" />
     </Messages>
-```<h3>Commands EssentialX</h3>
+```
+
+<h3>Commands EssentialX</h3>
 
 Generally, it has all the most commonly used commands from Avi and Essentials, and I've only added a few that I found useful.
 <hr />
@@ -522,5 +524,98 @@ Generally, it has all the most commonly used commands from Avi and Essentials, a
    - If you use *, you are executing this command for all users on the server, for example: /sudo * "/tpa Margarita".
    - You can also send messages using /sudo * "hello world," and everyone will write "hello world."
    - You can execute the command for a single person using, for example: /sudo Margarita "/kit maplestrike."
+
+
+
+
+
+
+<h3>TextCommands</h3>
+
+With this option, you can enable text commands, create commands that only return useful text for creating rules
+<hr />
+
+```
+  <TextCommand Name="rules" Icon="" Help=":V">
+      <Messages>
+        <string>No Hack</string>
+        <string>No Bug - No Toxic</string>
+        <string>FUN :P</string>
+      </Messages>
+    </TextCommand>
+```
+
+
+
+<h3>Anti Admin Abuse</h3>
+
+When enabling this option, all administrators, while using GOD, VANISH, or AERIAL CAMERA, will send a message to the general chat indicating that the administrator is abusing their power.
+<hr />
+
+
+<h3>Old Gravity</h3>
+
+Enabling this option allows you to configure the player's gravity
+<hr />
+
+```  
+<OldGravityConfig Enabled="false">
+    <GravityMultiplier>0.97</GravityMultiplier>
+  </OldGravityConfig>
+```
+
+
+
+<h3>Join Messages</h3>
+
+You can enable player entry/exit messages
+<hr />
+
+```  
+  <JoinMessagesConfig Enabled="true" />
+```
+
+
+<h3>Lobby</h3>
+
+By placing a 'SetLobby' command at the point where you put this command, all players will appear in the Lobby when they connect or respawn.
+<hr />
+
+<h5> Commands </h5>
+
+ - /setlobby
+
+```  
+  <LobbyConfiguration Enabled="true" PositionCoords="" />
+```
+
+
+
+<h3>Salvage Modifier</h3>
+
+With this option, you can change the speed of building structures or barricades within the game, and you can configure it so that different users have different speeds
+<hr />
+
+
+
+*The lower the '**Force**' value, the faster it will remove structures. It allows decimals*
+
+
+```  
+   <SalvageRanks>
+      <SalvageRanks Permission="marga.vipalto" Force="3" />
+      <SalvageRanks Permission="marga.vipnoob" Force="5" />
+    </SalvageRanks>
+```
+
+
+<h3>Command Helper</h3>
+
+Enabling this option allows users that when they execute a command that doesn't exist, it provides them with help. For example, if a user enters /tpe, and it doesn't exist but /tpa does, it will show that /tpa is a valid command
+<hr />
+
+```  
+   <CommandHelperConfig Enabled="true" Icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Logo_informations.svg/1024px-Logo_informations.svg.png" />
+```
 
 
