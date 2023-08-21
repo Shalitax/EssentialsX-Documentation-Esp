@@ -589,7 +589,73 @@ By placing a 'SetLobby' command at the point where you put this command, all pla
   <LobbyConfiguration Enabled="true" PositionCoords="" />
 ```
 
+<h3>Ranks</h3>
 
+It allows you to create ranks within the server and grant ranks to users as a reward for achieving an accomplishment
+<hr />
+
+<h4> Usage </h5>
+
+ 1. If you enable '**RankConfig**' in the configuration and set it to **True**, and then execute 
+
+ 
+
+>        /rocket reload essentialsX
+
+ Go  **Rocket/Plugins/EssentialsX** folder, a file named 'Ranks.json' will be generated.
+
+ 2.  Ranks Default:
+
+```xml
+    {
+    "Rank": [
+      {
+        "Name": "rango1",
+        "Reputation": -1000,
+        "Crafting": 0,
+        "Zombies": 0,
+        "MegaZombies": 0,
+        "FoundedItems": 0,
+        "FoundedPlants": 0,
+        "Fishing": 0,
+        "Animals": 0,
+        "GroupToWin": "rango1"
+      },
+      {
+        "Name": "rango2",
+        "Reputation": -2000,
+        "Crafting": 0,
+        "Zombies": 0,
+        "MegaZombies": 0,
+        "FoundedItems": 0,
+        "FoundedPlants": 0,
+        "Fishing": 0,
+        "Animals": 0,
+        "GroupToWin": "rango2"
+      },
+      {
+        "Name": "rango3",
+        "Reputation": -3000,
+        "Crafting": 0,
+        "Zombies": 0,
+        "MegaZombies": 0,
+        "FoundedItems": 0,
+        "FoundedPlants": 0,
+        "Fishing": 0,
+        "Animals": 0,
+        "GroupToWin": "rango3"
+      }
+    ]
+  }
+]
+```
+<h4> Information</h5>
+
+The rank system, those listed within **'Ranks.json'** in the **Rocket/Plugins/EssentialsX** folder, will automatically create ranks within the **Permissions.xml** when you restart using 
+
+    /rocket reload essentialsX
+
+ or when you start the server. ***It's important to note that it generates the default three sample ranks, so it's necessary to delete them if you don't want them***
 
 <h3>Salvage Modifier</h3>
 
