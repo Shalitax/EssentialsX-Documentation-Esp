@@ -469,8 +469,8 @@ Allows users to have additional chest spaces using commands.
 ```
 Example.
     <Vaults>
-      <Vault Permission="vault.vip" SizeX="50" SizeY="50" />
-      <Vault Permission="vault.user" SizeX="10" SizeY="10" />
+      <Vault Name="VIP" Permission="vault.vip" SizeX="50" SizeY="50" />
+      <Vault Name="USER" Permission="vault.user" SizeX="10" SizeY="10" />
     </Vaults>
 ```
 <h3>CommandHelper</h3>
