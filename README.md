@@ -1,1 +1,1 @@
-# [EssentialsX Documentacion en español](https://github.com/Shalitax/EssentialsX-Documentation-Esp/wiki)
+# [EssentialsX Documentacion (Español)](https://github.com/Shalitax/EssentialsX-Documentation-Esp/wiki)
