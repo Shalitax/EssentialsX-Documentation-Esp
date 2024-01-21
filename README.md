@@ -1,7 +1,5 @@
-**Guía en español para el plugin EssentialsX.**
+# [EssentialsX Documentacion en español](https://github.com/Shalitax/EssentialsX-Documentation-Esp/wiki)
 
-[Puede adquirir el plugin desde unturned store](https://unturnedstore.com/products/353)
-***
 **Comandos y funciones incluidos con el plugin:**
 
  - Kits
@@ -32,9 +30,5 @@
  - SalvageModifier
  - AnnouncerConfig
  - CommandHelper
-
-***
-   <CommandHelperConfig Enabled="true" Icon="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Logo_informations.svg/1024px-Logo_informations.svg.png" />
-```
 
 
